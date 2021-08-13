@@ -5,12 +5,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "lato";
+    src: url("../../vendors/font/Lato-Bold.ttf")format("truetype"),
+    url("../../vendors/font/lato-regular-webfont.woff")format("woff"),
+    url("../../vendors/font/lato-regular-webfont.woff2")format("woff2"),
+    url("../../vendors/font/Lato-Regular.ttf")format("truetype");
+}
 body{
     height: 2500px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'lato', Arial, sans-serif;
 }
 /* Row holders */
 .row{
     max-width: 90%;
     margin: 0 auto;
+}
+/* Header banner section */
+.header_banner{
+    
 }
