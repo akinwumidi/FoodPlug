@@ -1,10 +1,5 @@
-/* #29ca8e */
+/* #a82d49 */
 /* Universal styling */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 @font-face {
     font-family: "lato";
     src: url("../../vendors/font/Lato-Bold.ttf")format("truetype"),
@@ -12,6 +7,32 @@
     url("../../vendors/font/lato-regular-webfont.woff2")format("woff2"),
     url("../../vendors/font/Lato-Regular.ttf")format("truetype");
 }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* resusables */
+.btnred{
+    background: #a82d49;
+    color: #fff;
+}
+.btnred:hover{
+    border: 3px solid #a82d49;
+    background: rgba(0,0,0,0);
+    color: #a82d49;
+}
+.btnwhite{
+    background: #fff;
+}
+.btnwhite:hover{
+    border: 3px solid #a82d49;
+    background: rgba(0,0,0,0);
+    color: #a82d49;
+
+}
+/* ----------- */
 body{
     height: 2500px;
     font-family: 'lato', Arial, sans-serif;
@@ -21,7 +42,79 @@ body{
     max-width: 90%;
     margin: 0 auto;
 }
+/* header section */
+header{
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    clear: both;
+}
+.logo-holder{
+    background:#a82d49;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    position: absolute;
+    left: 64px;
+    top: 0px;
+    text-align: center;
+    padding:20px;
+    line-height: 4;
+}
+
+.logo_icon{
+    font-size: 45px;
+    color: white;
+}
+.logo-holder,.header-link_holder{
+    display: inline-block;
+}
+.header-link_holder{
+    /* border: 1px solid tomato; */
+    vertical-align: middle;
+    /* margin: 0 0 0 20%; */
+    float: right;
+}
+.header_btn{
+    margin: 0 0 0 40px;
+}
+.header_ul{
+    list-style: none;
+    float: right;
+}
+.header-link_holder li{
+    float: left;
+    text-align: center;
+}
+.header-link_holder li:hover{
+    border: 2px solid #a82d49;
+}
+.header-link_holder li a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #a82d49;
+}
+
+.header-banner_button{
+    border: 2px solid #a82d49;
+    padding: 15px 30px;
+}
+.banner-writeup_holder h1{
+    color: #43121d;
+}
+/* .active_link{
+    border:2px solid #a82d49;
+} */
 /* Header banner section */
 .header_banner{
-    
+    height: 95vh;
+    background-image: url("../img/banner.jpg");
+    /* background: tomato; */
+    background-size: cover;
+    margin: 50px 0 0 0;
+    border: 1px solid black;
+    padding: 10% 0 0 0;
 }
