@@ -39,15 +39,20 @@
     margin: 0 0 0 10px;
 }
 /* ----------- */
+
 body{
     height: 2500px;
     font-family: 'lato', Arial, sans-serif;
 }
+
+
 /* Row holders */
 .row{
     max-width: 90%;
     margin: 0 auto;
 }
+
+
 /* header section */
 header{
     background: #fff;
@@ -63,7 +68,7 @@ header{
     height: 100px;
     vertical-align: middle;
     position: absolute;
-    left: 64px;
+    left: 63px;
     top: 0px;
     text-align: center;
     padding:20px;
@@ -80,7 +85,6 @@ header{
 .header-link_holder{
     vertical-align: middle;
     float: right;
-    /* backface-visibility: hidden; */
 }
 .header_btn{
     margin: 0 0 0 40px;
@@ -119,13 +123,33 @@ header{
     margin: 0 0 20px 0;
     color: #777;
 }
+
+
 /* Header banner section */
 .header_banner{
     height: 95vh;
     background-image: url("../img/banner.jpg");
-    /* background: tomato; */
     background-size: cover;
     margin: 50px 0 0 0;
-    border: 1px solid black;
     padding: 10% 0 0 0;
 }
+/* ------------------------------- */
+
+
+/* Customer counter */
+.customer-counter{
+    background: #a82d49;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.customer-counter h1{
+    font-size: 40px;
+
+}
+.customer-counter p{
+    font-size: 15px;
+}
+/* --------------- */
