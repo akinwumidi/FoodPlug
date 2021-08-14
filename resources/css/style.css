@@ -7,17 +7,21 @@
     url("../../vendors/font/lato-regular-webfont.woff2")format("woff2"),
     url("../../vendors/font/Lato-Regular.ttf")format("truetype");
 }
+html{
+    text-size-adjust: 100%;
+
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    text-size-adjust: 100%;
 }
 
 /* resusables */
 h2~p{
     line-height: 1.8;
 }
+
 .fix-float_alignment{
     display: flex;
     align-items: center;
@@ -53,9 +57,15 @@ h2~p{
     color: #43121d;
     font-size: 28px;
     margin: 0 0 20px 0;
-    padding: 0 0 0 10px;
+    padding: 0 10px;
     border-left: 5px solid #a82d49;
     background: rgba(238, 238, 238,0.3);
+}
+.h-red{
+    color: #a82d49;
+    font-size: 30px;
+    border-right: 5px solid #a82d49;
+
 }
 /* ----------- */
 
@@ -177,8 +187,6 @@ header{
 
 /* About us section */
 .about-us{
-    height: 1380px;
-    border: 1px solid black;
     padding: 80px 0 0 0;
     
 }
@@ -206,5 +214,51 @@ header{
 .text-card-list{
     margin: 20px 0;
 }
+.about-banner{
+    height: 400px;
+    background: url("../img/image1.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 40px 0 0 0;
+}
+.center-card{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+.btn-waves{
+    border: 2px solid #fff;
+    display: inline-block;
+    padding: 0 0px 0 5px;
+    border-radius: 50%;
+    background: #a82d49;
+    color: #fff;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 5.1;
+    margin: 40px 0 0 0;
+    outline: none;
+    cursor: pointer;
+
+    /* animation-name: ripple;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite; */
+    animation: ripple 2s infinite;
+}
+.btn-waves-icon{
+    font-size: 30px;
+}
 
 /* ------------------ */
+/* animations */
+@keyframes ripple {
+    0%{
+        box-shadow: 0 0 0 0 #a82d49, 0 0 0 0 #a82d49;
+    }
+    80%{
+        box-shadow: 0 0 0 20px rgba(0,0,0,0), 0 0 0 40px rgba(0,0,0,0);
+    }
+    100%{
+        box-shadow: 0 0 0 20 #a82d49, 0 0 0 40 #a82d49;
+    }
+}
