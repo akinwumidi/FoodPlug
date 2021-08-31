@@ -287,6 +287,13 @@ header{
 /* ************************ */
 /* Textimonial section */
 /* ****************** */
+/* FAQ section */
+.faqcard{
+    border: 1px solid black;
+}
+
+/* *********** */
+
 /* ------------------ */
 /* animations */
 @keyframes ripple {
