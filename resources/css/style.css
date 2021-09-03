@@ -67,6 +67,9 @@ h2~p{
     border-right: 5px solid #a82d49;
 
 }
+.clearfix{
+    clear: both;
+}
 /* ----------- */
 
 body{
@@ -291,8 +294,20 @@ header{
 .faqcard{
     border: 1px solid black;
 }
-
+.faqparallax{
+    background: url(../img/image2.jpg);
+    height: 200px;
+    background-attachment: fixed;
+    background-size: cover;
+}
 /* *********** */
+
+/* Email subscription section */
+.subscription{
+    padding: 40px;
+    text-align: center;    
+}
+/* *************************** */
 
 /* ------------------ */
 /* animations */
