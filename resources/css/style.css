@@ -307,7 +307,46 @@ header{
     padding: 40px;
     text-align: center;    
 }
+.subinput{
+    border: 1px solid #a82d49;
+    padding: 16px 30px;
+}
 /* *************************** */
+/* Footer section */
+.footer{
+    background: #a82d49;
+    color: #fff;
+}
+.b{
+    border-right: 5px solid #fff;
+}
+.footer-btn-a{
+    display: inline-block;
+}
+.footer-btn{
+    padding: 10px 40px;
+    /* width: 200px; */
+}
+/* footer icons */
+.footer-icon_holder{
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    background: #a82d49;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #fff;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 0.5;
+}
+.footer-icon{
+    color: white;
+    font-size: 16px;
+    margin: 0px 10px 0px 0px;
+    vertical-align: middle;
+}
+/************************  */
 
 /* ------------------ */
 /* animations */
