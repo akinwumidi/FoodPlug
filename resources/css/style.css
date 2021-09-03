@@ -96,6 +96,7 @@ header{
     left: 0;
     width: 100%;
     clear: both;
+    z-index: 100;
 }
 .logo-holder{
     background:#a82d49;
@@ -357,9 +358,34 @@ header{
     padding: 40px;
     text-align: center;    
 }
+.subscription h1{
+    margin: 15px 0;
+    color: #43121d;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.3px;
+}
+.subscription p{
+    margin: 10px 0;
+}
 .subinput{
-    border: 1px solid #a82d49;
-    padding: 16px 30px;
+    border: 2px solid #a82d49;
+    border-right: transparent;
+    padding: 15px 30px;
+    transition: 2s linear ease-in;
+}
+.subinput:hover{
+    padding: 15px 50px;
+}
+.subscriptionbtnred{
+    padding: 15px 30px;
+    background: #a82d49;
+    color: #fff;
+    border: 2px solid #a82d49;
+}
+.subscriptionbtnred:hover{
+    border:2px solid #43121d;
+    background: #43121d;
 }
 /* *************************** */
 /* Footer section */
