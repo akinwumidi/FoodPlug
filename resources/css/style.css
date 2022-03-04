@@ -97,6 +97,7 @@ header{
     width: 100%;
     clear: both;
     z-index: 100;
+    /* display: none; */
 }
 .logo-holder{
     background:#a82d49;
@@ -163,11 +164,11 @@ header{
 
 /* Header banner section */
 .header_banner{
-    height: 95vh;
+    /* height: 95vh; */
     background: url("../img/banner.jpg") no-repeat center;
     background-size: cover;
     margin: 50px 0 0 0;
-    padding: 10% 0 0 0;
+    padding: 10% 0 10px 0;
 }
 /* ------------------------------- */
 
@@ -175,10 +176,19 @@ header{
 /* Customer counter */
 .customer-counter{
     background: #a82d49;
-    height: 100px;
+    /* height: 100px; */
     color: #fff;
     text-align: center;
     line-height: 1.4;
+    padding: 5px 0;
+}
+.customer_count{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* justify-content: space-evenly; */
+    align-items: center;
 }
 
 .customer-counter h1{
@@ -191,18 +201,36 @@ header{
 /* --------------- */
 
 /* About us section */
+.aboutUs_container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}.about-us_img-card{
+    /* width: 450px; */
+    width: auto;
+    height: 350px;
+    overflow: hidden;
+}
+.about-us_text-card{
+    width: 450px;
+}
+.about-us_img-card img{
+    /* width: 100%; */
+    width: 100%;
+    height: 100%;
+    /* height: auto; */
+    border-radius: 30px;
+}
+
 .about-us{
     padding: 80px 0 0 0;
     
 }
 
-.about-us img{
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    
 
-}
 .about-us_img-card{
     border-radius: 30px;
 }
@@ -290,25 +318,40 @@ header{
     margin: 10px 0;
 }
 /* ************************ */
-/* Textimonial section */
-.testimonial-Slidecontainer{
-    padding: 30px 0;
-}
+/* Testimonial section */
 .testimonial{
     background: #a82d49;
+    padding: 30px 0;
+
 }
 /* sliders */
 .slides_holder{
     color: #000;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    position: relative;
+    height: 300px;
+    align-items: center;
+    border: 1px solid #fff;
+    clear: both;
+    padding: 10px 0;
+}
+.slides_Cholder{
+    position: absolute;
+    width: 2800px;
+    height: 250px;
+    animation: slideAnimation 20s infinite;
+    left: 20%;
+
 }
 .sliders{
     border: 1px solid white;
     border-radius: 20px;
     padding: 20px;
-    display: inline-block;
+    margin: 0 20px;
+    width: 700px;
+    /* width: 300px; */
+    float: left;
 }
 .sliders h4{
     color: #fff;
@@ -316,7 +359,7 @@ header{
 }
 .dotted-circles{
     padding: 10px 0;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     display: flex;
     justify-content: center;
 }
@@ -329,6 +372,41 @@ header{
     margin: 0 3px;
     cursor: pointer;
 
+}
+
+@keyframes slideAnimation {
+    0%{
+        left: 0px;
+    }
+    20%{ 
+        /* 4 seconds */
+        left: 0px;
+
+    }
+    25%{
+        /* 4 seconds */
+        left: -500px;
+    }
+    45%{
+        /* 5 seconds */
+        left: -500px;
+    }
+    50%{
+        /* 10 seconds */
+        left: -1000px;
+    }
+    70%{
+        /* 14 seconds */
+        left: -1000px;
+    }
+    75%{
+        /* 15 seconds */
+        left: -500px;
+    }
+    70%{
+        /* 14 seconds */
+        left: -500px;
+    }
 }
 
 /* ****************** */
