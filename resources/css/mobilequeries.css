@@ -41,6 +41,15 @@
     .faqcard {
         flex: 100%;
     }
+
+    .spiced_headerText {
+        padding: 0 0 0 15px;
+        border-right: none;
+    }
+
+    .about-banner {
+        padding: 50px 10px;
+    }
 }
 
 

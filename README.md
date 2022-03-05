@@ -1,6 +1,6 @@
 ![Project Overview](ProjectOverview.png)
 
-# Foodarena
+# FoodPlug
 
 ## Netlify Link
 - https://foodplug.netlify.app/
@@ -14,6 +14,8 @@ Feel free to edit and use as you like, You can also reach out to me, if you need
 # Technologies Used
 - HTML
 - CSS [ Styling ]
+- Javascript [ Mobile Menu Functionality ]
+- Fontawesome [ Icons ]
 
 ## Special Thanks
 
