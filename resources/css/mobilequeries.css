@@ -62,6 +62,15 @@
     .about-us_text-card {
         margin: 20px 0px;
     }
+
+    .customer-counter h1 {
+        font-size: 25px;
+
+    }
+
+    .header_banner {
+        padding: 30px 0
+    }
 }
 
 
