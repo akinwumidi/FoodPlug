@@ -680,7 +680,7 @@ header {
 .nav__mobileBrandcontainer {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
 }
 
@@ -702,12 +702,9 @@ header {
     margin: 0 0 0 5px;
 }
 
-.nav__Mobilelinks {
-    display: none;
-}
 
 .nav-hamburger {
-    z-index: 10;
+    z-index: 20;
 }
 
 #menu {
@@ -749,6 +746,46 @@ header {
     opacity: 0;
 }
 
+
+
+
+.nav__Mobilelinks {
+    display: none;
+    z-index: 5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 1500px;
+    background: #a82d49;
+    border-left: 1px solid #eee;
+    box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.nav__Mobilelinks ul {
+    list-style: none;
+}
+
+.nav__Mobilelinks ul li {}
+
+.nav__Mobilelinks ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.active_nav__links {
+    color: #a82d49 !important;
+    background: #fff;
+}
+
+.nav__Mobilelinks ul li a:hover,
+.nav__Mobilelinks ul li a:focus,
+.nav__Mobilelinks ul li a:active {
+    color: #a82d49;
+    background: #fff;
+}
 
 .change {
     display: block;
