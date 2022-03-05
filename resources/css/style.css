@@ -688,7 +688,7 @@ header {
     background: #a82d49;
     border-bottom: 1px solid #eee;
     box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.05);
-    padding: 5px 20px;
+    padding: 7px 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap !important;
@@ -787,11 +787,9 @@ header {
     list-style: none;
 }
 
-.nav__Mobilelinks ul li {}
-
 .nav__Mobilelinks ul li a {
     display: block;
-    padding: 10px 20px;
+    padding: 18px 20px;
     text-decoration: none;
     color: #fff;
 }
