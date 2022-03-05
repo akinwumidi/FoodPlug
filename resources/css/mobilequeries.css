@@ -5,7 +5,7 @@
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
     .about-us_img-card img {
-        width: 100%;
+        width: 70%;
         height: auto;
         border-radius: 30px;
     }
@@ -18,7 +18,29 @@
         display: flex !important;
     }
 
+    .subscriptionbtnred {
+        margin: 10px 0;
+    }
 
+    .subinput {
+        border: 2px solid #a82d49;
+        width: 100%;
+
+    }
+
+    .faqparallax {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .faqparallax button {
+        margin: 10px 0 0 0;
+    }
+
+    .faqcard {
+        flex: 100%;
+    }
 }
 
 

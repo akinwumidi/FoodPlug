@@ -477,37 +477,50 @@ header {
 }
 
 .faqcard {
-    /* border: 1px solid black; */
+    flex: 50%;
+    padding: 10px 15px 10px 0;
 }
 
-.faq h3 {
+.faqcard__container h3 {
     color: #43121d;
     margin: 8px 0;
+    font-size: 25px;
 }
 
-.faq p {
+.faqcard__container p {
     font-weight: 0;
     line-height: 1.4;
+    font-size: 20px;
 }
 
-.leaf-icon {
+.faqcard__container .leaf-icon {
     margin: 0 10px;
     color: #a82d49;
 
 }
 
-.faq h1 {
+.faqcard__container h1 {
     color: #a82d49;
     margin: 10px 0;
     text-align: center;
 
 }
 
+.faqcard__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 .faqparallax h2 {
     font-weight: 700;
     letter-spacing: 0.2px;
     font-size: 28px;
-    text-align: right;
+    text-align: center;
+    margin: 0px 10px;
+
 }
 
 .faqparallax {
@@ -521,10 +534,15 @@ header {
     color: #fff;
     display: flex;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
     z-index: 94;
 }
 
-.faqparallax .col {
+
+.faqparallax h2,
+.faqparallax button {
     z-index: 97;
 }
 
@@ -537,7 +555,7 @@ header {
     top: 0;
     left: 0;
     z-index: 96;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* *********** */
@@ -588,18 +606,20 @@ header {
 .footer {
     background: #a82d49;
     color: #fff;
-    padding: 10px 30px;
+    padding: 20px 30px;
 
 }
 
 .footerbox {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap-reverse;
 }
 
-.b {
-    border-right: 5px solid #fff;
+.footer__iconBox {
+    /* border-right: 5px solid #fff; */
+    margin: 8px;
 }
 
 .footer-btn-a {
@@ -668,7 +688,7 @@ header {
     background: #a82d49;
     border-bottom: 1px solid #eee;
     box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.05);
-    padding: 10px 20px;
+    padding: 5px 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap !important;
@@ -703,8 +723,9 @@ header {
 }
 
 
-.nav-hamburger {
-    z-index: 20;
+.nav__Hamburgermenu {
+    z-index: 200;
+
 }
 
 #menu {
@@ -731,7 +752,7 @@ header {
 }
 
 .change .bar {
-    background-color: #fff;
+    background-color: #a82d49;
 }
 
 .change #bar1 {
@@ -751,15 +772,15 @@ header {
 
 .nav__Mobilelinks {
     display: none;
-    z-index: 5;
+    z-index: 2 !important;
     position: absolute;
     right: 0;
     top: 0;
-    width: 50%;
+    width: 55%;
     height: 1500px;
     background: #a82d49;
-    border-left: 1px solid #eee;
-    box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: -6px -20px 5px 1px rgb(0 0 0 / 5%);
+
 }
 
 .nav__Mobilelinks ul {
